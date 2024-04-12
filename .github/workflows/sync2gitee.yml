@@ -5,6 +5,7 @@ on:
       - master
   schedule:
     - cron: '0 12 * * *'  # 每天中午12点运行
+    workflow_dispatch:  # 添加手动触发器，以便手动运行工作流
 
 jobs:
   repo-sync:
